@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="opencvbasics.ViewController">
+  <children>
+    <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <bottom>
+        <Button fx:id="button" contentDisplay="CENTER" mnemonicParsing="false" onAction="#startCamera" text="Start Camera" textAlignment="CENTER" BorderPane.alignment="CENTER">
+          <BorderPane.margin>
+            <Insets bottom="10.0" />
+          </BorderPane.margin>
+        </Button>
+      </bottom>
+      <center>
+        <ImageView fx:id="currentFrame" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      </center>
+      <right>
+        <VBox prefHeight="-1.0" prefWidth="-1.0">
+          <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Controls" />
+            <CheckBox id="grayScale" fx:id="grayscale" mnemonicParsing="false" text="show in gray scale" />
+          </children>
+        </VBox>
+      </right>
+    </BorderPane>
+  </children>
+</AnchorPane>
